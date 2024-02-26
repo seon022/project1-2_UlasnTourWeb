@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>1101_UI구현_강선영</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="h_in">
+                <div class="head1">
+                    <div class="h_logo"><a href="">울산관광</a></div>
+                    <div class="h_right">
+                        <nav class="gnb">
+                            <ul>
+                                <li><a href="">울산여행</a></li>
+                                <li><a href="">문화행사</a></li>
+                                <li><a href="">여행정보</a></li>
+                                <li><a href="">신청하기</a></li>
+                                <li><a href="">여행이야기</a></li>
+                                <li><a href="">나의 여행</a></li>
+                            </ul>
+                        </nav>
+                        <div class="h_btn">
+                            <select name="lang" id="">
+                                <option value="ko">한국어</option>
+                                <option value="en">English</option>
+                            </select>
+                            <div class="all_menu"><a href="">전체메뉴 열기</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head2">
+                    <div class="h_search">
+                        <form action="">
+                            <input  type="text" class="hs_txt" id="keyword" name="keyword" placeholder="&#35;테마여행 &#35;둘레길투어">
+                            <button class="hs_btn">검색</button>
+                        </form>
+                    </div>
+                    <div class="h_weather">
+                        <div class="now">
+                            <img src="img/icon_sunny.png" alt="">
+                            <p>현재</p>
+                            <p>17&#8451;</p>
+                        </div>
+                        <div class="tomorrow">
+                            <img src="img/icon_cloudy.png" alt=""><p>내일</p>
+                        </div>
+                        <div class="dayAfter">
+                            <img src="img/icon_cloudy.png" alt=""><p>모레</p></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section class="main1">
+                <div class="main_slide_wrap">
+                    <div class="ms_box">
+                        <div class="ms_photo">
+                            <p class="ms_p1"><img src="img/main_slide_01.jpg" alt="간절곶"></p>
+                        </div>
+                        <div class="ms_txt">
+                            <p class="ms_t1">간절곶</p>
+                            <p class="ms_t2">한반도에서 아침 해가 가장 먼저 뜨는 곳</p>
+                            <p class="btn_more"><a href="">자세히 보기</a></p>
+                        </div>
+                    </div>
+                    <div class="ms_box">
+                        <div class="ms_photo">
+                            <p class="ms_p1"><img src="img/main_slide_02.jpg" alt=""></p>
+                        </div>
+                        <div class="ms_txt">
+                            <p class="ms_t1">함월루</p>
+                            <p class="ms_t2">울산의 전경을 한눈에 볼 수 있는 '달을 품은 누각'</p>
+                            <p class="btn_more"><a href="">자세히 보기</a></p>
+                        </div>
+                    </div>
+                    <div class="ms_box">
+                        <div class="ms_photo">
+                            <p class="ms_p1"><img src="img/main_slide_03.jpg" alt=""></p>
+                        </div>
+                        <div class="ms_txt">
+                            <p class="ms_t1">태화강국가정원</p>
+                            <p class="ms_t2">태화강 겨울철새, 떼까마귀 군무를 볼 수 있는 생태정원</p>
+                            <p class="btn_more"><a href="">자세히 보기</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ms_btn">
+                    <p class="ms_prev"></p>
+                    <p class="ms_next"></p>
+                </div>
+                <div class="ms_pager"></div>
+            </section>
+            <section class="main2">
+                <div class="m2_quick">
+                    <div class="q_left">
+                        <ul>
+                            <li class="q_01"><a href="">이 달의<br>추천 여행지</a></li>
+                            <li class="q_02"><a href="">울산 12경</a></li>
+                            <li class="q_03"><a href="">권역별 여행지</a></li>
+                            <li class="q_04"><a href="">여행지 영상</a></li>
+                            <li class="q_05"><a href="">관광지도<br>보러가기</a></li>
+                        </ul>
+                    </div>
+                    <div class="q_right">
+                        <ul>
+                            <li class="q_06"><a href="">관광안내소</a></li>
+                            <li class="q_07"><a href="">교통정보</a></li>
+                            <li class="q_08"><a href="">관광책자<br>보러가기</a></li>
+                            <li class="q_09"><a href="">공공wifi</a></li>
+                            <li class="q_10"><a href="">시티투어 버스</a></li>
+                            <li class="q_11"><a href="">관광택시 신청</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main3">
+                <div class="m3_in">
+                    <h2 class="main_title">울산 여행지 추천!</h2>
+                    <div class="m3_contents">
+                        <div class="m3_cate">
+                            <p class="active"><a href="">울산 테마여행</a></p>
+                            <p><a href="">추천 여행코스</a></p>
+                        </div>
+                        <div class="m3_wrap">
+                            <div class="m3_list active">
+                                <ul>
+                                    <li class="m3_01"><a href="">
+                                        <p class="m3_name">태화강의 밤, 은하수 드리운 별빛 산책로</p>
+                                        <p class="m3_ment">
+                                            <span>스토리 투어</span><br><br>
+                                            사시사철 은하수를 볼 수 있는 태화강국가정원.<br> 낮에는 윤슬을 보며 걷고, 밤에는 별빛을 따라 걷는 길.
+                                        </p>
+                                        <p class="m3_photo"><img src="img/theme01.jpg" alt=""></p>
+                                    </a></li>
+                                    <li class="m3_02"><a href="">
+                                        <p class="m3_name">솔향기 머무는 언덕, 대왕암 솔바람길</p>
+                                        <p class="m3_ment">
+                                            <span>둘레길 투어</span><br><br>
+                                            소리를 따라 떠나는 시간여행!<br>파도소리, 바람소리, 바다의 향기에 취하는 길.
+                                        </p>
+                                        <p class="m3_photo"><img src="img/theme02.jpg" alt=""></p>
+                                    </a></li>
+                                    <li class="m3_03"><a href="">
+                                        <p class="m3_name">막창 맛집이 모여있는 병영 막창거리</p>
+                                        <p class="m3_ment">
+                                            <span>특화거리 투어</span><br><br>
+                                            고소한 막창과 따뜻한 칼국수가 먹고 싶은 날엔 이 거리로 직진!
+                                        </p>
+                                        <p class="m3_photo"><img src="img/theme03.jpg" alt=""></p>
+                                    </a></li>
+                                    <li class="m3_04"><a href="">
+                                        <p class="m3_name"> 하늘을 나는 고래를 만날 수 있는 웨일즈판타지움</p>
+                                        <p class="m3_ment">
+                                            <span>스토리 투어</span><br><br>
+                                            울산 하면 고래, 고래 하면 울산이다.<br> 울산의 명소를 누비는 고래를 실감 나는 입체영상으로<br>만나볼 수 있는 미디어아트 전시 공간.
+                                        </p>
+                                        <p class="m3_photo"><img src="img/theme04.jpg" alt=""></p>
+                                    </a></li>
+                                </ul>
+                            </div>
+                            <div class="m3_list">
+                                <ul>
+                                    <li class="m3_01"><a href="">
+                                        <p class="m3_name">누눙누웅</p>
+                                        <p class="m3_ment">
+                                            <span>스토리 투어</span><br><br>
+                                            사시사철 은하수를 볼 수 있는 태화강국가정원.<br> 낮에는 윤슬을 보며 걷고, 밤에는 별빛을 따라 걷는 길.
+                                        </p>
+                                        <p class="m3_photo"><img src="img/theme01.jpg" alt=""></p>
+                                    </a></li>
+                                    <li class="m3_02"><a href="">
+                                        <p class="m3_name">솔향기 머무는 언덕, 대왕암 솔바람길</p>
+                                        <p class="m3_ment">
+                                            <span>둘레길 투어</span><br><br>
+                                            소리를 따라 떠나는 시간여행!<br>파도소리, 바람소리, 바다의 향기에 취하는 길.
+                                        </p>
+                                        <p class="m3_photo"><img src="img/theme02.jpg" alt=""></p>
+                                    </a></li>
+                                    <li class="m3_03"><a href="">
+                                        <p class="m3_name">막창 맛집이 모여있는 병영 막창거리</p>
+                                        <p class="m3_ment">
+                                            <span>특화거리 투어</span><br><br>
+                                            고소한 막창과 따뜻한 칼국수가 먹고 싶은 날엔 이 거리로 직진!
+                                        </p>
+                                        <p class="m3_photo"><img src="img/theme03.jpg" alt=""></p>
+                                    </a></li>
+                                    <li class="m3_03"><a href="">
+                                        <p class="m3_name">막창 맛집이 모여있는 병영 막창거리</p>
+                                        <p class="m3_ment">
+                                            <span>특화거리 투어</span><br><br>
+                                            고소한 막창과 따뜻한 칼국수가 먹고 싶은 날엔 이 거리로 직진!
+                                        </p>
+                                        <p class="m3_photo"><img src="img/theme03.jpg" alt=""></p>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main4">
+                <div class="m4_in">
+                    <div class="m4_list_wrap">
+                        <div class="m4_box">
+                            <div class="m4_bg"><img src="img/banner.jpg" alt=""></div>
+                            <div class="m4_txt"><a href="">
+                                <p class="ment">100년 세월의 해송이 가득한</p>
+                                <p class="name">울산 동구<br><span>대왕암공원</span></p>
+                                <p class="hash">&#35;호국룡전설 &#35;소나무 &#35;문무왕</p>
+                            </a></div>
+                        </div>
+                        <div class="m4_box">
+                            <div class="m4_bg"><img src="img/banner2.jpg" alt=""></div>
+                            <div class="m4_txt"><a href="">
+                                <p class="ment">눈이 시리도록 푸른 동해바다</p>
+                                <p class="name">울산 동구<br><span>신명몽돌해변</span></p>
+                                <p class="hash">&#35;해파랑길 10코스 &#35;귀신고래등대 &#35;정자포구</p>
+                            </a></div>
+                        </div>
+                        <div class="m4_box">
+                            <div class="m4_bg"><img src="img/banner3.jpg" alt=""></div>
+                            <div class="m4_txt"><a href="">
+                                <p class="ment">고래 생태 체험공원</p>
+                                <p class="name">울산 남구<br><span>장생포 옛마을</span></p>
+                                <p class="hash">&#35;고래문화마을 &#35;5D입체영상관 &#35;수생식물원 </p>
+                            </a></div>
+                        </div>
+                    </div>
+                    <div class="m4_btns">
+                        <div class="m4_pager"></div>
+                        <p class="m4_play"></p>
+                        <p class="m4_pause"></p>
+                    </div>
+                </div>
+            </section>
+            <section class="main5">
+                <h2 class="main_title">행사 정보</h2>
+                <div class="m5_list">
+                    <ul>
+                        <li><a href=""><img src="img/sns1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="img/sns2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="img/sns3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="img/sns4.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main6">
+                <div class="m6_in">
+                    <h2 class="main_title">여행 서비스 정보</h2>
+                    <div class="m6_list">
+                        <ul>
+                            <li class="m6_01"><a href="">응급의료 서비스</a></li>
+                            <li class="m6_02"><a href="">관광 안내 서비스</a></li>
+                            <li class="m6_03"><a href="">문화관광해설사</a></li>
+                            <li class="m6_04"><a href="">관광 가이드북 신청</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+             <div class="f_in">
+                <section class="foot1">
+                    <div class="f_logo">울산관광</div>
+                    <div class="f_policy">
+                        <p><a href=""><span class="blue">개인정보처리방침</span></a></p>
+                        <p><a href="">저작권정책</a></p>
+                        <p><a href="">이용안내</a></p>
+                        <p><a href="">웹접근성품질인증</a></p> 
+                    </div>
+                    <div class="f_call">대표전화 : <span class="blue">052-120</span></div>
+                </section>
+                <section class="foot2">
+                    <div class="f_info">
+                        <p>(44675) 울산광역시 남구 중앙로 201 (신정동)</p>
+                        <p>Copyright © Ulsan Metropolitan City. All rights reserved.</p>
+                        <p>본 사이트의 모든 내용들은 울산광역시의 허락없이 무단복제가 불가하며, 게시된 전자우편주소는 개인정보보호법 및 정보통신망법에 따라 무단 수집을 거부합니다.</p>
+                    </div>
+                    <div class="f_sns">
+                        <p class="you"><a href="">youtube</a></p>
+                        <p class="face"><a href="">facebook</a></p>
+                        <p class="blog"><a href="">naver blog</a></p>
+                        <p class="insta"><a href="">instgram</a></p>
+                    </div>
+                </section>
+             </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

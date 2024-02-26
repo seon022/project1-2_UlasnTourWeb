@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* common.css */
+
+/* 푸터 */
+#footer{
+    background-color: #333;
+    padding: 30px 0;
+}
+.f_in{
+    width: 1440px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #888;
+}
+/* 푸터1 */
+.foot1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.f_logo{
+    width: 142px;
+    height: 30px;
+    text-indent: -9999px;
+    background-image: url(../img/foot_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.f_policy{
+    display: flex;
+    width: 1000px;
+}
+.f_policy a{
+    color: #888;
+}
+.f_policy a::after{
+    content: "|";
+    margin: 0 10px;
+    opacity: 0.4;
+}
+.f_policy p:last-child a::after{
+    display: none;
+}
+.blue{
+    font-weight: 500;
+    color: #0d79b3;
+}
+.f_call{
+    padding: 10px 20px 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    border-radius: 20px;
+    background-color: #fff;
+}
+/* 푸터2 */
+.foot2{
+    position: relative;
+}
+.f_info{
+    margin-left: 204px;
+}
+.f_sns{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+.f_sns p a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+.you a{
+    background-image: url(../img/youtube.png);
+}
+.face a{
+    background-image: url(../img/face.png);
+}
+.blog a{
+    background-image: url(../img/blog.png);
+}
+.insta a{
+    background-image: url(../img/insta.png);
+}
